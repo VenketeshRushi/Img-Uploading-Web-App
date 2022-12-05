@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.hero {
+  position: relative;
+  max-width: 1440px;
+  min-height: 100vh;
+  background: #FFFFFF;
+}
+.welcome {
+  background: url("../Assets/images/Rectangle.png"), #444278;
+  position: absolute;
+  width: 512px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.info {
+  margin: auto;
+  position: absolute;
+  width: 349px;
+  height: 200px;
+  left: 91px;
+  top: 128px;
+}
+.info p:nth-child(1) {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 62px;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 38px;
+}
+.info p:nth-child(2) {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: left;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.signupinfo {
+  position: absolute;
+  width: 612px;
+  height: 508px;
+  left: 623px;
+  top: 128px;
+}
+.signupheading h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 4px;
+  color: #000000;
+  text-align: left;
+}
+.signupheading p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.5;
+  text-align: left;
+  margin-bottom: 31px;
+}
+
+.signupcheckbox {
+  display: flex;
+  gap: 3px;
+}
+.signupcheckbox p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #32324d;
+  display: flex;
+  align-items: center;
+}
+.btn {
+  width: 305px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 64px;
+  gap: 10px;
+  background: #6360ab;
+  border-radius: 4px;
+  color: white;
+  border: #6360ab;
+}
+.last {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #32324d;
+  margin-top: 3px;
+}

@@ -1,0 +1,218 @@
+.hero {
+  min-height: 100vh;
+  position: relative;
+  background: #ffffff;
+}
+.image p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.6;
+  margin-top: 60px;
+}
+.image img {
+  width: 613px;
+  height: 338px;
+}
+.image {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.hero h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.hero button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 34px;
+  padding: auto;
+  border-radius: 4px;
+  color: #ffffff;
+  height: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #4d4ae8;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  border: 2px solid #4d4ae8;
+}
+
+.hero img:nth-child(0) {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.hero h6 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.allimg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+.allimg > div {
+  box-sizing: border-box;
+  position: relative;
+  width: 293px;
+  height: 293px;
+  margin: auto;
+  border-radius: 3px;
+}
+.allimg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+.allimg input {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  z-index: 90;
+}
+.uploads {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.uploads input {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 5px;
+  white-space: nowrap;
+  text-shadow: 1px 1px #fff;
+  color: #3e3bba;
+  border-color: #3e3bba;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.uploads div {
+  width: 100%;
+  margin: auto;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #4d4ae8;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid #4d4ae8;
+  color: #ffffff;
+  height: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.uploads button {
+  background-color: #4d4ae8;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid #4d4ae8;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+    rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.hero button:last-child {
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border-radius: 100px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.hero button:last-child:hover {
+  box-shadow: rgba(103, 38, 201, 0.35) 0 -25px 18px -14px inset,
+    rgba(53, 44, 187, 0.25) 0 1px 2px, rgba(30, 34, 164, 0.25) 0 2px 4px,
+    rgba(101, 44, 187, 0.25) 0 4px 8px, rgba(44, 51, 187, 0.25) 0 8px 16px,
+    rgba(111, 44, 187, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+  outline: 0;
+}
