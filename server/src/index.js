@@ -36,9 +36,6 @@ app.use(
   })
 );
 
-
-
-
 app.use("/users", cors(corsOptions), userRouter);
 app.use("/files", cors(corsOptions), imageRouter);
 

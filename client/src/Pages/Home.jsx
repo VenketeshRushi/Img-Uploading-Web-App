@@ -52,7 +52,7 @@ function Home() {
 
   async function getimages() {
     try {
-      const res = await axios.get("https://imguploads.herokuapp.com/files", {
+      const res = await axios.get("https://img-drive.onrender.com/files", {
         headers: {
           Authorization: `${userid}`,
         },
@@ -80,7 +80,7 @@ function Home() {
       formData.append("imgCollection", file);
     });
     try {
-      const res = await axios.post("http://localhost:8080/files", formData, {
+      const res = await axios.post("https://img-drive.onrender.com/files", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${jwt}`,
@@ -118,7 +118,7 @@ function Home() {
     try {
       let res = await axios({
         method: "post",
-        url: "http://localhost:8080/files/del",
+        url: "https://img-drive.onrender.com/files/del",
         headers: {
           Authorization: `${userid}`,
         },
@@ -138,7 +138,7 @@ function Home() {
   }
   function handlelogout() {
     dispatch(logoutAPI);
-    navigate("/login");
+    navigate("/");
     console.log("logging out");
     Cookies.remove("jwttoken")
     Cookies.remove("userid")

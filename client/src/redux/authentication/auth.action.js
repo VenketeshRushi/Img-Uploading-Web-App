@@ -8,7 +8,7 @@ import Cookies from "js-cookie";
 
 export const loginAPI = (data) => async (dispatch) => {
   try {
-    let response = await axios.post("http://localhost:8080/users/login", data);
+    let response = await axios.post("https://img-drive.onrender.com/users/login", data);
     console.log(response);
     if (response.status === 201) {
       Cookies.set("jwttoken", response.data.jwttoken);

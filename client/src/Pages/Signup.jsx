@@ -23,7 +23,7 @@ function Signup() {
   async function signUpApi(data) {
     try {
       let response = await axios.post(
-        "http://localhost:8080/users/signup",
+        "https://img-drive.onrender.com/users/signup",
         signupdata
       );
       console.log(response);
@@ -86,7 +86,7 @@ function Signup() {
         )}
         <Box className={styles.welcome}>
           <Box className={styles.info}>
-            <p>Welcome to Rsquare.</p>
+            <p>Welcome to Img-Drive.</p>
             <p>
               Lets get you all set up so start with your account and begin
               setting up your profile.

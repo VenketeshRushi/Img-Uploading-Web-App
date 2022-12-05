@@ -41,7 +41,7 @@ app.post(
     // let imgurl = url + `/public/` + req.file.filename;
     // //console.log(req.file);
     const reqFiles = [];
-    const url = req.protocol + "://" + req.get("host");
+    const url = "https://img-drive.onrender.com";
     for (var i = 0; i < req.files.length; i++) {
       reqFiles.push(url + "/public/" + req.files[i].filename);
     }

@@ -41,11 +41,11 @@ app.post("/login", async (req, res) => {
     let minutes = 30;
     now.setTime(now.getTime() + minutes * 60 * 1000);
 
-    res.cookie("jwttoken", token, {
-      maxAge: 100000,
-      httpOnly: true,
-      sameSite: "lax",
-    });
+    // res.cookie("jwttoken", token, {
+    //   maxAge: 100000,
+    //   httpOnly: true,
+    //   sameSite: "lax",
+    // });
 
     res.status(201).send({ jwttoken: token, userid: user._id });
   } catch (error) {
