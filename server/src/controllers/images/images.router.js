@@ -64,7 +64,7 @@ app.post(
   }
 );
 
-app.get("/", authorization, async (req, res) => {
+app.get("/", async (req, res) => {
   let data;
   try {
     let useresimg = await User.find(

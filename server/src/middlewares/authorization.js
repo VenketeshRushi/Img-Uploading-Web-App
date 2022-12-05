@@ -23,7 +23,7 @@ const authorization = (req, res, next) => {
     } catch (e) {
       return res
         .status(400)
-        .json({ message: "Login again Session Expired", status: "Failed" }).redirect("/login");
+        .json({ message: "Login again Session Expired", status: "Failed" })
     }
 
     if (!user) {

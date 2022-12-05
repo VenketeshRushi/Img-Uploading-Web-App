@@ -54,7 +54,7 @@ function Home() {
     try {
       const res = await axios.get("https://img-drive.onrender.com/files", {
         headers: {
-          Authorization: `${userid}`,
+          Authorization: `Bearer ${jwt}`,
         },
       });
       //console.log(res);
@@ -83,7 +83,7 @@ function Home() {
       const res = await axios.post("https://img-drive.onrender.com/files", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
-          Authorization: `Bearer ${jwt}`,
+          Authorization: `${userid}`,
         },
       });
       //console.log(res.message);
